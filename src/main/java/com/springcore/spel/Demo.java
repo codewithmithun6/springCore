@@ -27,6 +27,10 @@ public class Demo {
 	@Value("#{new java.lang.String('Mithun Kumar')}")
 	private String name;
 	
+	// inserting boolean value by default is false
+	@Value("#{ 10>5 }")
+	private boolean isActive;
+	
 	public int getX() {
 		return x;
 	}
@@ -65,8 +69,10 @@ public class Demo {
 	}
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e + ", name=" + name + "]";
+		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e + ", name=" + name + ", isActive=" + isActive
+				+ "]";
 	}
+	
 	
 	
 	
