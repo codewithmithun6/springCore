@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="https://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  https://www.springframework.org/schema/context
+  https://www.springframework.org/schema/context/spring-beans.xsd">
+
+ <!-- this is our bean and below configuration is used by setter method -->
+<!--  First way of creating beans  value as a element-->
+	<!-- <bean class="com.springcore.Student" name="student1">
+
+		<property name="studentId">
+			<value>2444</value>
+		</property>
+
+		<property name="studentName">
+			<value>Mithun Kumar</value>
+		</property>
+
+		<property name="studentAddress">
+			<value>Gaya</value>
+		</property>
+
+	</bean> -->
+	
+	<!--  second way of creating beans value as a attribute -->
+	<!-- this is our first bean -->
+	
+	<!-- <bean class="com.springcore.Student" name="student1">
+	
+	<property name="studentId" value="24243"/>
+	
+	<property name="studentName" value="Rahul Kumar Choudhary"/>
+	
+	<property name="studentAddress" value="Manpur Bazar"/>	
+	
+	</bean> -->
+	
+	<!-- this is our second bean -->
+	
+	<!-- <bean class="com.springcore.Student" name="student2">
+	
+	<property name="studentId" value="28281"/>
+	
+	<property name="studentName" value="Aryan Raj"/>
+	
+	<property name="studentAddress" value="Hydrabad"/>	
+	
+	</bean> -->
+	
+	<!-- this is a third way to creating beans using P schema -->
+	<!-- this is our first bean -->
+	
+	<bean class="com.springcore.Student" name="student1" p:studentId="24243" p:studentName="Rahul kumar choudhary" p:studentAddress="Manpur Bazar"/>
+	
+		
+	<!-- this is our second bean -->
+	
+	<bean class="com.springcore.Student" name="student2" p:studentId="28281" p:studentName="Aryan Raj" p:studentAddress="Hydrabad"/>
+	
+	
+
+</beans>
